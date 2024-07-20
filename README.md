@@ -111,9 +111,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact
-
-Your Name - [@vibhorjoshi](https://github.com/vibhorjoshi)
+## DEPLOYMENT
 
 Project Link: [https://github.com/your-username/pdf-to-text-indian-documents]
 (https://jyrpuzduadb3vyszaqmbmb.streamlit.app/)
