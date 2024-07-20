@@ -1,32 +1,76 @@
-# PDF to Text
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/nainiayoub/pdf-text-data-extractor/main/app.py)
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=nainiayoub.pdf-text-data-extractor)
-![forks badge](https://img.shields.io/github/forks/nainiayoub/pdf-text-data-extractor)
-![starts badge](https://img.shields.io/github/stars/nainiayoub/pdf-text-data-extractor?style=social)
+# PDF to Text Converter for Indian Documents
 
-PDF text data extraction app that takes a PDF document as input and returns either a txt file that contains all pages or a compressed folder of txt files representing the document pages. OCR can also be enabled for scanned docoments.
+This Streamlit application allows users to extract text from PDF files and images, with special features for Indian identity documents like Aadhar Card, PAN Card, and Driving License.
 
+## Features
 
-![pdf_text_image](https://user-images.githubusercontent.com/50157142/214037439-448fafb8-5363-46cb-849e-6132f9bc0fb2.PNG)
+1. **PDF to Text Conversion**: Convert PDF files to text format.
+2. **OCR Capability**: Extract text from scanned documents and images using Optical Character Recognition (OCR).
+3. **Multiple Output Options**: 
+   - Generate a single text file for the entire PDF.
+   - Create individual text files for each page (provided as a ZIP file).
+4. **Indian Document Processing**:
+   - Extract specific details from Aadhar Card, PAN Card, and Driving License.
+5. **Multi-language Support**: Process documents in various Indian languages including English, Hindi, Tamil, Telugu, and Bengali.
+6. **User-friendly Interface**: Easy-to-use Streamlit interface for uploading and processing documents.
 
+## Requirements
 
+- Python 3.7+
+- Streamlit
+- pdf2image
+- Pillow
+- pytesseract
+- Tesseract OCR engine (must be installed separately)
 
+## Installation
 
-## How does it worK?
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/yourusername/pdf-to-text-indian-documents.git
+   cd pdf-to-text-indian-documents
+   ```
 
-```mermaid
-flowchart LR
+2. Install the required Python packages:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-A[PDF] --> |text conversion / OCR| B(Text)
-B --> |Option 1| D[txt file]
-B --> |Option 2| E[ZIP folder of txt files for pages]
+3. Install Tesseract OCR engine:
+   - For Windows: Download and install from [here](https://github.com/UB-Mannheim/tesseract/wiki)
+   - For macOS: `brew install tesseract`
+   - For Linux: `sudo apt-get install tesseract-ocr`
 
+4. Ensure Tesseract is in your system PATH or update the `tesseract_path` variable in the script.
+
+## Usage
+
+Run the Streamlit app with the following command:
+
+```sh
+streamlit run app.py
 ```
-1. Upload your PDF.
-2. Enable OCR (for scanned documents).
-3. Select the PDF language.
-4. Download your output file (zip/txt).
 
-## How to support the project
-You can help support the project through feedback and/or [buy me coffee](https://www.buymeacoffee.com/nainiayoub).
+Then, open your web browser and go to `http://localhost:8501` to use the application.
 
+## Deployment
+
+This app can be deployed on Streamlit Sharing for free. Visit [Streamlit Sharing](https://streamlit.io/sharing) for more information on how to deploy your Streamlit app.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/yourusername/pdf-to-text-indian-documents/issues).
+
+## License
+
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+
+## Screenshots
+
+[]
+
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+
+Project Link: [https://github.com/yourusername/pdf-to-text-indian-documents](https://github.com/yourusername/pdf-to-text-indian-documents)
