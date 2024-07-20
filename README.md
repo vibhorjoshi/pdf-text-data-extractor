@@ -113,8 +113,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## DEPLOYMENT
 
-Project Link: [https://github.com/your-username/pdf-to-text-indian-documents]
-(https://jyrpuzduadb3vyszaqmbmb.streamlit.app/)
+Project Link: [https://jyrpuzduadb3vyszaqmbmb.streamlit.app/]
 
 ## Acknowledgments
 
