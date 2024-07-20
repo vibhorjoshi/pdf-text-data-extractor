@@ -5,9 +5,8 @@ import re
 from functions import convert_pdf_to_txt_pages, convert_pdf_to_txt_file, save_pages, displayPDF, images_to_txt
 import os
 import pytesseract
-
 # Set Tesseract path
-tesseract_path = r'"C:\Users\acer\Documents\tesseract-ocr-w64-setup-v5.0.0-alpha.20210506.exe"'  # Adjust this path as needed
+tesseract_path = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Adjust this path as needed
 if os.path.exists(tesseract_path):
     pytesseract.pytesseract.tesseract_cmd = tesseract_path
     TESSERACT_AVAILABLE = True
