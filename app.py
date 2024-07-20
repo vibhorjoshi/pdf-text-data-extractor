@@ -7,7 +7,7 @@ import os
 import pytesseract
 
 # Set Tesseract path
-tesseract_path = r'C:\Program Files\Tesseract-OCR'  # Adjust this path as needed
+tesseract_path = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Adjust this path as needed
 if os.path.exists(tesseract_path):
     pytesseract.pytesseract.tesseract_cmd = tesseract_path
     TESSERACT_AVAILABLE = True
